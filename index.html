@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newroll – AI Video Generator</title>
+  <style>
+    body {
+      background-color: #FFF7B2;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #FFD600;
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: #000;
+    }
+    .input-group {
+      margin-bottom: 20px;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, textarea, button, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      font-size: 1em;
+    }
+    button {
+      background-color: #FFD600;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #e0bf00;
+    }
+    .two-column {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .column {
+      flex: 1;
+      min-width: 300px;
+    }
+    footer {
+      background: #f0f0f0;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>Newroll – AI Video Generator</header>
+
+  <section>
+    <h2>Turn a Prompt + Your Brand into a Stunning Video</h2>
+    <p>Newroll helps businesses, startups, and creators turn simple prompts into branded videos for TikTok, Reels, LinkedIn, and more. Upload your brand assets once, and we'll apply them to every video you generate.</p>
+    <div class="two-column">
+      <div class="column">
+        <h3>🎨 Brand Assets</h3>
+        <div class="input-group">
+          <label for="logo">Upload Logo</label>
+          <input type="file" id="logo" />
+        </div>
+        <div class="input-group">
+          <label for="font">Select Font</label>
+          <select id="font">
+            <option>Arial</option>
+            <option>Roboto</option>
+            <option>Open Sans</option>
+            <option>Montserrat</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="brand-name">Brand Name</label>
+          <input type="text" id="brand-name" placeholder="e.g. Newroll, Studio XYZ" />
+        </div>
+        <button onclick="alert('Brand assets saved locally (demo).')">Save Brand</button>
+      </div>
+      <div class="column">
+        <h3>⚡ Generate Video</h3>
+        <div class="input-group">
+          <label for="prompt">Video Prompt</label>
+          <textarea id="prompt" rows="5" placeholder="Describe your video idea..."></textarea>
+        </div>
+        <div class="input-group">
+          <label for="media">Upload Images or Clips</label>
+          <input type="file" id="media" multiple />
+        </div>
+        <button onclick="alert('Video generation triggered (demo).')">Generate Video</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Newroll. All rights reserved. | Built for Gen Z creatives & brands.
+  </footer>
+</body>
+</html>
